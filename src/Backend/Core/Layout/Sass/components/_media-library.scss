@@ -295,6 +295,10 @@
   margin-bottom: 1.5em;
 }
 
+.qq-btn {
+  cursor: pointer;
+}
+
 .qq-progress-bar-container-selector {
   position: absolute;
   left: 0;
@@ -400,4 +404,10 @@
       width: auto;
     }
   }
+}
+
+.qq-alert-dialog-selector {
+  border-radius: $toast-border-radius;
+  border: 0;
+  padding: 0;
 }

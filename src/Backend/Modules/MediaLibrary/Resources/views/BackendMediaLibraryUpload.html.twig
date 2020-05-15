@@ -51,12 +51,24 @@
         </div>
       </li>
     </ul>
-
     <dialog class="qq-alert-dialog-selector">
-      <div class="qq-dialog-message-selector"></div>
-      <div class="qq-dialog-buttons">
-        <button type="button" class="qq-cancel-button-selector">Close</button>
+      <div class="modal d-block" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close qq-cancel-button-selector" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="qq-dialog-message-selector pb-0"></div>
+            </div>
+            <div class="modal-footer"></div>
+          </div>
+        </div>
       </div>
+
     </dialog>
 
     <dialog class="qq-confirm-dialog-selector">
@@ -76,6 +88,7 @@
       </div>
     </dialog>
   </div>
+
 </script>
 <!-- END: Fine Uploader Gallery template
     ====================================================================== -->
