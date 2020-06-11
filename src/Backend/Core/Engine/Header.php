@@ -96,6 +96,7 @@ final class Header extends KernelLoader
         $this->addJS('/js/vendors/bootstrap.bundle.js', 'Core', false, true, true, Priority::core());
         $this->addJS('/js/vendors/typeahead.bundle.min.js', 'Core', false, true, true, Priority::core());
         $this->addJS('/js/vendors/bootstrap-tagsinput.min.js', 'Core', false, true, true, Priority::core());
+        $this->addJS('/js/vendors/flatpickr.js', 'Core', false, true, true, Priority::core());
         $this->addJS('jquery/jquery.backend.js', 'Core', true, false, true, Priority::core());
         $this->addJS('utils.js', 'Core', true, false, true, Priority::core());
         $this->addJS('backend.js', 'Core', true, false, true, Priority::core());
@@ -117,6 +118,7 @@ final class Header extends KernelLoader
     {
         $this->addCSS('/css/vendors/bootstrap-tagsinput.css', 'Core', true, true, true, Priority::core());
         $this->addCSS('/css/vendors/bootstrap-tagsinput-typeahead.css', 'Core', true, true, true, Priority::core());
+        $this->addCSS('/css/vendors/flatpickr.css', 'Core', true, true, true, Priority::core());
         $this->addCSS('screen.css', 'Core', false, true, true, Priority::core());
         $this->addCSS('debug.css', 'Core', false, true, true, Priority::debug());
         $this->addCSS('/css/vendors/select2.css', 'Core', true, true, true, Priority::core());

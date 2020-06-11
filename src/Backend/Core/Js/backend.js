@@ -1360,7 +1360,7 @@ jsBackend.forms = {
     var $inputDatefieldTill = $('.inputDatefieldTill')
     var $inputDatefieldRange = $('.inputDatefieldRange')
 
-    $('.inputDatefieldNormal, .inputDatefieldFrom, .inputDatefieldTill, .inputDatefieldRange').datepicker(
+    $('.inputDatefieldNormal, .inputDatefieldFrom, .inputDatefieldTill, .inputDatefieldRange').flatpickr(
       {
         dayNames: dayNames,
         dayNamesMin: dayNamesMin,
