@@ -250,8 +250,15 @@ class Data extends BackendBaseActionIndex
             $chunks = explode('/', $startDate);
 
             // valid date
-            if (count($chunks) == 3 && checkdate((int) $chunks[1], (int) $chunks[0], (int) $chunks[2])) {
-                $this->filter['start_date'] = $startDate;
+            if (count($chunks) === 3 && checkdate((int) $chunks[1], (int) $chunks[0], (int) $chunks[2])) {
+                $this->filter['start_date'] = implode(
+                    '/',
+                    [
+                        (int) $chunks[1],
+                        (int) $chunks[0],
+                        (int) $chunks[2],
+                    ]
+                );
             } else {
                 // invalid date
                 $this->filter['start_date'] = '';
